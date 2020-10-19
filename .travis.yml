@@ -19,12 +19,12 @@ jobs:
 #       arch: ppc64le
 #       script:
 #         - python hello_world.py
-#      - dist: bionic
-#       arch: amd64
-#       script:
-#         - python hello_world.py
-#     - dist: bionic
-#       arch: ppc64le
-#       script:
-#         - python hello_world.py
+     - dist: bionic
+      arch: amd64
+      script:
+        - python hello_world.py
+    - dist: bionic
+      arch: ppc64le
+      script:
+        - python hello_world.py
       
