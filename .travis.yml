@@ -5,14 +5,10 @@ jobs:
   include:
     - dist: focal
       arch: ppc64le
-      python:
-        - "3.7"
       script:
         - python hello_world.py
     - dist: focal
       arch: amd64
-      python:
-        - "3.7"
       script:
         - python hello_world.py
 #     - dist: xenial
