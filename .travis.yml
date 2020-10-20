@@ -8,7 +8,7 @@ jobs:
       group: edge
       script:
         #- python hello_world.py
-        - /opt/at14.0/bin/gcc hello_world.py -o hello_world
+        - /opt/at14.0/bin/python hello_world.py -o hello_world
         - python hello_world.py
     - dist: focal
       arch: amd64
