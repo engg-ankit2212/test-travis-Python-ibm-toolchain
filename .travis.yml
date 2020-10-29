@@ -1,6 +1,7 @@
 os: linux
 language: python
-sudo sh python_interpreter.sh
+script:
+  - sudo sh python_interpreter.sh
 
 jobs:
   include:
@@ -9,16 +10,16 @@ jobs:
       group: edge
       script:
         - python3 hello_world.py
-#     - dist: bionic
-#       arch: ppc64le
-#       group: edge
-#       script:
-#         #- sudo sh python_interpreter.sh
-#         - python3 hello_world.py
-#     - dist: xenial
-#       arch: ppc64le
-#       group: edge
-#       script:
-#         #- sudo sh python_interpreter.sh
-#         - python3 hello_world.py
+    - dist: bionic
+      arch: ppc64le
+      group: edge
+      script:
+        #- sudo sh python_interpreter.sh
+        - python3 hello_world.py
+    - dist: xenial
+      arch: ppc64le
+      group: edge
+      script:
+        #- sudo sh python_interpreter.sh
+        - python3 hello_world.py
       
