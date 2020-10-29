@@ -7,15 +7,18 @@ jobs:
       arch: ppc64le
       group: edge
       script:
-        - python hello_world.py
+        - sudo sh python_interpreter.sh
+        #- python hello_world.py
     - dist: bionic
       arch: ppc64le
       group: edge
       script:
-        - python hello_world.py
+        - sudo sh python_interpreter.sh
+        #- python hello_world.py
     - dist: xenial
       arch: ppc64le
       group: edge
       script:
-        - python hello_world.py
+        - sudo sh python_interpreter.sh
+        #- python hello_world.py
       
