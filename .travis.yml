@@ -1,5 +1,6 @@
 os: linux
 language: python
+sudo : true
 script:
   - sudo sh python_interpreter.sh
 
