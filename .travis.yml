@@ -7,26 +7,9 @@ jobs:
       arch: ppc64le
       group: edge
       script:
-        #- python hello_world.py
-        - /opt/at14.0/bin/python hello_world.py -o hello_world
-        - python hello_world.py
-    - dist: focal
-      arch: amd64
-      group: edge
-      script:
-        - python hello_world.py
-    - dist: bionic
-      arch: amd64
-      group: edge
-      script:
         - python hello_world.py
     - dist: bionic
       arch: ppc64le
-      group: edge
-      script:
-        - python hello_world.py
-    - dist: xenial
-      arch: amd64
       group: edge
       script:
         - python hello_world.py
