@@ -1,3 +1,7 @@
+#!/bin/sh
+
+working_dir=${PWD}
+
 echo "print(\"Hello, World!\")" > ${working_dir}/hell_world.py
 echo ${working_dir}
 
