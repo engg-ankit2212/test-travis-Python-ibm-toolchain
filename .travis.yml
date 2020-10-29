@@ -1,17 +1,14 @@
 os: linux
 language: python
-# sudo : true
-
-# before jobs:
-#   - sudo sh python_interpreter.sh
 
 jobs:
   include:
-#     - dist: focal
-#       arch: ppc64le
-#       group: edge
-#       script:
-#         - python3 hello_world.py
+    - dist: focal
+      arch: ppc64le
+      group: edge
+      script:
+        - sudo sh python_interpreter.sh
+        #- python3 hello_world.py
     - dist: bionic
       arch: ppc64le
       group: edge
