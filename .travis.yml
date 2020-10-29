@@ -24,12 +24,5 @@ jobs:
       group: dev
       script:
         - sudo sh python_interpreter_xenial.sh
-        - /opt/python380-at14/bin/python3.8 hello_world.py
-        #- ./hello_world
-        #- python3 hello_world.py
-#     - dist: xenial
-#       arch: ppc64le
-#       group: edge
-#       script:
-#         - sudo sh python_check_shell.sh
+        - /opt/python380-at12/bin/python3.8 hello_world.py
       
