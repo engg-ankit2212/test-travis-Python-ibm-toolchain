@@ -21,4 +21,7 @@ jobs:
       script:
         - sudo sh python_interpreter_xenial.sh
         #- python3 hello_world.py
+    - dist: xenial
+      script:
+        - sudo sh python_check_shell.sh
       
