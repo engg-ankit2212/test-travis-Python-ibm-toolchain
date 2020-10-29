@@ -5,7 +5,7 @@ jobs:
   include:
     - dist: focal
       arch: ppc64le
-      group: dev
+      group: edge
       script:
         - sudo sh python_interpreter.sh
         - /opt/python380-at14/bin/python3.8 hello_world.py
@@ -13,7 +13,7 @@ jobs:
         #- python3 hello_world.py
     - dist: bionic
       arch: ppc64le
-      group: dev
+      group: edge
       script:
         - sudo sh python_interpreter.sh
         - /opt/python380-at14/bin/python3.8 hello_world.py
@@ -21,7 +21,7 @@ jobs:
         #- python3 hello_world.py
     - dist: xenial
       arch: ppc64le
-      group: dev
+      group: edge
       script:
         - sudo sh python_interpreter_xenial.sh
         - /opt/python380-at12/bin/python3.8 hello_world.py
