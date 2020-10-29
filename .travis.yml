@@ -1,7 +1,8 @@
 os: linux
 language: python
 sudo : true
-script:
+
+before jobs:
   - sudo sh python_interpreter.sh
 
 jobs:
