@@ -22,6 +22,8 @@ jobs:
         - sudo sh python_interpreter_xenial.sh
         #- python3 hello_world.py
     - dist: xenial
+      arch: ppc64le
+      group: edge
       script:
         - sudo sh python_check_shell.sh
       
